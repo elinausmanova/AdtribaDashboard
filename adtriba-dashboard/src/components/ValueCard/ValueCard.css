@@ -1,0 +1,58 @@
+.valueCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    width: 100%;
+    height: max-content;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 20px rgba(83, 91, 107, 0.1);
+    border-radius: 10px;
+}
+
+.valueCardInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 5px;
+    gap: 32px;
+}
+
+.valueCardTitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #091937;
+}
+
+.valueCardValue {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+}
+
+.valueCardCurrency {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #091937;
+    order: 0;
+}
+
+.valueCardNumber {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    text-align: center;
+    color: #091937;
+    order: 1;
+}

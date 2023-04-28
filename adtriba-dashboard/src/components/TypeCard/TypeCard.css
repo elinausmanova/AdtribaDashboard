@@ -1,0 +1,61 @@
+.typeCard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 5px 0px;
+    position: relative;
+    width: max-content;
+    max-width: 30vw;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 20px rgba(83, 91, 107, 0.1);
+    border-radius: 10px;
+}
+
+.typeCardTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.sourceList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 10px 5px;
+}
+
+.source {
+    font-size: 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 6px;
+    min-width: 72px;
+    max-width: 300px;
+    color: #091937;
+    border: 1px solid #091937;
+    border-radius: 16px;
+}
+
+.typeCardType {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #091937;
+}
+
+.typeCardCount {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 19px;
+    color: #949090;
+}
