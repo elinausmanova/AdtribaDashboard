@@ -1,31 +1,36 @@
-export async function getData(url) {
-    let response = await fetch(url, {
-        headers: {
-          'x-api-key': 'woope1Pei5zieg'
-        }
-        });
+const fetch = require("node-fetch");
 
-    if (response.ok) { 
-        let json = await response.json();
-        console.log(json);
-        return json;
-    } else {
-        alert("HTTP-Error: " + response.status);
-    }
+async function getData(url) {
+  let response = await fetch(url, {
+    headers: {
+      "x-api-key": "woope1Pei5zieg",
+    },
+  });
+
+  if (response.ok) {
+    let json = await response.json();
+    console.log(json);
+    return json;
+  } else {
+    alert("HTTP-Error: " + response.status);
+  }
 }
 
-export async function getPartitions(url) {
-    let response = await fetch(url, {
-        headers: {
-          'x-api-key': 'woope1Pei5zieg'
-        }
-        });
+async function getPartitions(url) {
+  let response = await fetch(url, {
+    headers: {
+      "x-api-key": "woope1Pei5zieg",
+    },
+  });
 
-    if (response.ok) { 
-        let json = await response.json();
-        console.log(json);
-        return json;
-    } else {
-        alert("HTTP-Error: " + response.status);
-    }
+  if (response.ok) {
+    let json = await response.json();
+    console.log(json);
+    return json;
+  } else {
+    alert("HTTP-Error: " + response.status);
+  }
 }
+
+exports.getData = getData;
+exports.getPartitions = getPartitions;
